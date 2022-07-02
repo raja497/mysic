@@ -3,7 +3,7 @@
     "logo": "https://telegra.ph/file/e17ae80eefd44ab387aaf.jpg",
     "description": "Telegram Bot for streaming music trough the Telegram Group video chat feature.",
     "keywords": ["music", "py-tgcalls", "pyrogram", "telegram"],
-    "repository": "https://github.com/levina-lab/YukkiMusic-Old",
+    "repository": "https://github.com/raja497/mysic",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
