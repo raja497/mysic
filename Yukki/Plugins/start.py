@@ -23,11 +23,11 @@ from Yukki.YukkiUtilities.database.chats import get_served_chats, is_served_chat
 def start_pannel():  
     buttons = [
             [
-                InlineKeyboardButton(text="📚 Commands", url="https://telegra.ph/Veez-Mega-Guide-01-10")
+                InlineKeyboardButton(text="📚 Commands", url="https://telegra.ph/ABHINAS-MUSIC-07-02-5")
             ],
             [ 
-                InlineKeyboardButton(text="📣 Channel", url="https://t.me/levinachannel"),
-                InlineKeyboardButton(text="💭 Group", url="https://t.me/VeezSupportGroup")
+                InlineKeyboardButton(text="📣 Channel", url="https://t.me/ABOUT_ABHINAS"),
+                InlineKeyboardButton(text="💭 Group", url="https://t.me/DOSTI_GROUP_1234")
             ],
     ]
     return "✨ This is veez mega, a bot that can play music trough the Telegram Group video chat feature.", buttons
@@ -40,14 +40,14 @@ pstart_markup = InlineKeyboardMarkup(
                         "➕ Add me to your Group ➕", url="https://t.me/VeezMegaBot?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "📚 Commands", url="https://telegra.ph/Veez-Mega-Guide-01-10"),
+                        "📚 Commands", url="https://https://telegra.ph/ABHINAS-MUSIC-07-02-5"),
                     InlineKeyboardButton(
-                        "❓ Setup Guide", url="https://telegra.ph/Veez-Mega-Guid-11-19")
+                        "❓ Setup Guide", url="https://telegra.ph/ABHINAS-MUSIC-07-02-4")
                 ],[
                     InlineKeyboardButton(
-                        "👥 Official Group", url="https://t.me/VeezSupportGroup"), 
+                        "👥 Official Group", url="https://t.me/DOSTI_GROUP_1234"), 
                     InlineKeyboardButton(
-                        "📎 Official Channel", url="https://t.me/levinachannel")
+                        "📎 Official Channel", url="https://t.me/ABOUT_ABHINAS")
                 ],
             ]
         )
@@ -94,7 +94,7 @@ async def play(_, message: Message):
         user_name = message.from_user.first_name
         rpk = "["+user_name+"](tg://user?id="+str(user_id)+")" 
         await app.send_message(message.chat.id,
-            text=f"Hi {rpk} 👋🏻\n\nℹ️ [Veez Mega](https://t.me/VeezMegaBot) **Can** play music on your **Groups** through the **Telegram Group video chat** feature !\n\n💭 **Check out** all the **Bot commands** and how they work by clicking on the » 📚 **Commands** button !",
+            text=f"Hi {rpk} 👋🏻\n\nℹ️ [abhinas](https://t.me/abhinasroy) **Can** play music on your **Groups** through the **Telegram Group video chat** feature !\n\n💭 **Check out** all the **Bot commands** and how they work by clicking on the » 📚 **Commands** button !",
             parse_mode="markdown",
             reply_markup=pstart_markup,
             reply_to_message_id=message.message_id,
@@ -128,7 +128,7 @@ async def play(_, message: Message):
 📣 **Channel:** {channel}
 🔗 **Link:** {link}
 
-⚡️ __Powered by Veez Music AI__"""
+⚡️ __Powered by abhinas Music AI__"""
             buttons = personal_markup(link)
             userid = message.from_user.id
             thumb = await down_thumb(thumbnail, userid)
