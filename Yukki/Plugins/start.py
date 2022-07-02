@@ -30,7 +30,7 @@ def start_pannel():
                 InlineKeyboardButton(text="💭 Group", url="https://t.me/DOSTI_GROUP_1234")
             ],
     ]
-    return "✨ This is veez mega, a bot that can play music trough the Telegram Group video chat feature.", buttons
+    return "✨ This is Abhinas music, a bot that can play music trough the Telegram Group video chat feature.", buttons
 
 
 pstart_markup = InlineKeyboardMarkup(
@@ -64,9 +64,9 @@ async def welcome(_, message: Message):
     for member in message.new_chat_members:
         try:
             if member.id in OWNER:
-                return await message.reply_text(f"🧙🏻‍♂️ • {member.mention} •\n\n• **Staff** of veez mega has joined this Group.")
+                return await message.reply_text(f"🧙🏻‍♂️ • {member.mention} •\n\n• **Staff** of Abhinas music has joined this Group.")
             if member.id in SUDOERS:
-                return await message.reply_text(f"🧙🏻‍♂️ • {member.mention} •\n\n• **Staff** of veez mega has joined this Group.")
+                return await message.reply_text(f"🧙🏻‍♂️ • {member.mention} •\n\n• **Staff** of Abhinas music has joined this Group.")
             if member.id == ASSID:
                 await remove_active_chat(chat_id)
             if member.id == BOT_ID:
