@@ -168,7 +168,7 @@ async def play(_, message: Message):
         elif num.voice:
            title = "telegram audio"
         link = message.reply_to_message.link
-        thumbnail = "https://telegra.ph/file/82862f0af1d599cdea127.jpg"
+        thumbnail = "https://telegra.ph/file/824af71e48d8a65dc695f.jpg"
         videoid = "smex1"
         message.chat.title
         if len(message.chat.title) > 10:
